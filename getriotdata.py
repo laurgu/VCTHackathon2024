@@ -9,10 +9,10 @@ from io import BytesIO
 S3_BUCKET_URL = "https://vcthackathon-data.s3.us-west-2.amazonaws.com"
 
 # (game-changers, vct-international, vct-challengers)
-LEAGUE = "vct-international"
+LEAGUE = "vct-challengers"
 
 # (2022, 2023, 2024)
-YEAR = 2022
+YEAR = 2024
 
 BASE_DIRECTORY = "Z:/"
 
@@ -112,6 +112,3 @@ def download_games():
 
 if __name__ == "__main__":
     download_esports_files()
-    download_games()
-
-    print("DONE!!! FINALLY!!!")
