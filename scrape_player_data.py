@@ -101,5 +101,3 @@ if player_url:
         print(f"Agent Data for {player_name}:")
         for agent in agent_data:
             print(agent)
-
-
