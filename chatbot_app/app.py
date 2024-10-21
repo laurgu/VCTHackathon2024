@@ -1,28 +1,29 @@
-#from agent import createSessionToken, sendMessage
+from agent import createSessionToken, sendMessage
 
 import streamlit as st
 import base64
 
 # Test
-
+testToggle = False
 #session = createSessionToken()
 #print(session)
 #input = "Bye"
 #print(sendMessage("9a130562", input, True))
 
 # Mock the backend interaction
-def createSessionToken():
-    return "mock_session_id"
+if testToggle == True:
+        
+    def createSessionToken():
+        return "mock_session_id"
 
-def sendMessage(session_id, input, is_initial=False):
-    # Mock response from the bot
-    if "bye" in input.lower():
-        return {'text': "Goodbye! Have a great day!", 'files': []}
-    elif "team" in input.lower():
-        return {'text': "Sure! Let's build your Valorant team. Who would you like to start with?", 'files': []}
-    else:
-        return {'text': f"You said: {input}", 'files': []}
-
+    def sendMessage(session_id, input, is_initial=False):
+        # Mock response from the bot
+        if "bye" in input.lower():
+            return {'text': "Goodbye! Have a great day!", 'files': []}
+        elif "team" in input.lower():
+            return {'text': "Sure! Let's build your Valorant team. Who would you like to start with?", 'files': []}
+        else:
+            return {'text': f"You said: {input}", 'files': []}
 
 bot_name = "VCT Bot" # Set a custom name for the bot
 st.markdown(
