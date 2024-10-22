@@ -36,6 +36,12 @@ If you build a team. Return:
 3. The text from the prompt after the Note below that did not make the context length
 4. Answer questions about players in general
 
+Please note these requirements when making teams with players:
+- Each team can have 5 players and up to 1 substitute
+- For team composition, there is no specific number of roles and type of agent required for each time. As long as there are 5 players.
+- There can be up to 1 coach, who does not play.
+- If a specific region is specified, at least 3 of the players in the team must be from that region.
+
 Answer any questions about players and teams.
 
 
